@@ -86,7 +86,7 @@ header img{
 }
 
 .conteudo > section{
-    padding:0 20px 20px 20px;
+    padding:0 20px 20px;
 }
 
 .cards{
@@ -117,8 +117,7 @@ li{
     margin-bottom:8px;
 }
 
-@media (min-width:768px){
-
+@media (width >=768px){
     .layout{
         flex-direction:row;
     }
