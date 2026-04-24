@@ -1,0 +1,19 @@
+.sidebar{
+    width:220px;
+    background:white;
+    border-right:1px solid var(--cor-borda);
+    padding:20px;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:10px;
+    cursor:pointer;
+}
