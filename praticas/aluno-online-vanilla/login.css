@@ -1,0 +1,148 @@
+:root{
+    --cor-fundo:#efefef;
+    --cor-texto:#303030;
+    --cor-borda:#ddd;
+    --cor-erro:#d40000;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:var(--cor-fundo);
+    color:var(--cor-texto);
+}
+
+/* LAYOUT LOGIN */
+
+.login-layout{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+/* CARD LOGIN */
+
+.login-card{
+    background:white;
+    border:1px solid var(--cor-borda);
+    border-radius:8px;
+    width:100%;
+    max-width:420px;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* LOGO */
+
+.logo{
+    width:70px;
+    margin:0 auto 15px;
+}
+
+/* TÍTULO */
+
+.login-card h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* CAMPOS */
+
+.campo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:15px;
+}
+
+.campo label{
+    margin-bottom:6px;
+}
+
+.campo input{
+    padding:10px;
+    border:1px solid var(--cor-borda);
+    border-radius:5px;
+    font-size:14px;
+    width:100%;
+}
+
+/* INPUT COM ERRO */
+
+.input-erro{
+    border:1px solid var(--cor-erro);
+}
+
+/* ERRO */
+
+.erro{
+    color:var(--cor-erro);
+    font-size:14px;
+    margin-top:6px;
+}
+
+/* BOTÃO */
+
+button{
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    background:#dcdcdc;
+    font-size:16px;
+    cursor:pointer;
+    width:100%;
+}
+
+button:hover{
+    background:#cfcfcf;
+}
+
+button:disabled{
+    background:#e5e5e5;
+    cursor:not-allowed;
+}
+
+/* RODAPÉ */
+
+footer{
+    margin-top:25px;
+    font-size:14px;
+    color:#555;
+    text-align:center;
+}
+
+/* RESPONSIVIDADE MOBILE */
+
+@media (width <=480px){
+.login-card{
+    padding:30px 20px;
+}
+
+.logo{
+    width:60px;
+}
+
+.login-card h1{
+    font-size:22px;
+}
+
+}
+
+/* RESPONSIVIDADE DESKTOP */
+
+@media (width >=768px){
+.login-card{
+    max-width:450px;
+    padding:45px;
+}
+
+}
