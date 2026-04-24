@@ -121,3 +121,60 @@ li{
         flex:1;
     }
 }
+
+/* ===== LOGIN ===== */
+
+.login-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    width: 300px;
+    text-align: center;
+}
+
+.logo-login {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.login-card h1 {
+    margin-bottom: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.campo input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.erro {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+}
