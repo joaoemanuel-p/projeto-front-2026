@@ -55,6 +55,17 @@ body{
     list-style:none;
 }
 
+.menu-lateral a{
+    text-decoration:none;
+    color:var(--cor-texto);
+    display:block;
+    padding:8px;
+}
+
+.menu-lateral a:hover{
+    background:#d0d0d0;
+}
+
 .menu-lateral li{
     margin-bottom:10px;
 }
@@ -75,7 +86,7 @@ header img{
 }
 
 .conteudo > section{
-    padding:0 20px 20px 20px;
+    padding:0 20px 20px;
 }
 
 .cards{
@@ -106,8 +117,7 @@ li{
     margin-bottom:8px;
 }
 
-@media (min-width:768px){
-
+@media (width >=768px){
     .layout{
         flex-direction:row;
     }
