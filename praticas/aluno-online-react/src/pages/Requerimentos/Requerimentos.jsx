@@ -1,11 +1,13 @@
+import "./Requerimentos.css";
 import MainLayout from "../../components/MainLayout/MainLayout";
 
-function Requerimentos() {
+export default function Requerimentos() {
   return (
     <MainLayout>
-      <h1>Requerimentos</h1>
+      <section>
+        <h2>Requerimentos</h2>
+        <p>Lista de requerimentos do aluno</p>
+      </section>
     </MainLayout>
   );
 }
-
-export default Requerimentos;

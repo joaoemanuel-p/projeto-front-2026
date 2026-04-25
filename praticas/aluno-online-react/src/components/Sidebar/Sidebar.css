@@ -1,19 +1,46 @@
-.sidebar{
-    width:220px;
-    background:white;
-    border-right:1px solid var(--cor-borda);
-    padding:20px;
+.menu-lateral {
+  background: #dcdcdc;
+  padding: 20px;
 }
 
-.sidebar h2{
-    margin-bottom:20px;
+.menu-lateral h2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
 }
 
-.sidebar ul{
-    list-style:none;
+.menu-lateral h2 img {
+  width: 42px;
+  height: 42px;
 }
 
-.sidebar li{
-    margin-bottom:10px;
-    cursor:pointer;
+.menu-lateral ul {
+  list-style: none;
+}
+
+.menu-lateral li {
+  margin-bottom: 10px;
+}
+
+.menu-lateral a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  display: block;
+  padding: 8px;
+}
+
+.menu-lateral a:hover {
+  background: #d0d0d0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 24px;
+  height: 24px;
 }

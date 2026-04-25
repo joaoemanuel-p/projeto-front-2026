@@ -1,11 +1,14 @@
+import "./Faltas.css";
 import MainLayout from "../../components/MainLayout/MainLayout";
 
-function Faltas() {
+export default function Faltas() {
   return (
     <MainLayout>
-      <h1>Faltas</h1>
+      <section>
+        <h2>Faltas</h2>
+
+        <p>Lista de faltas do aluno</p>
+      </section>
     </MainLayout>
   );
 }
-
-export default Faltas;

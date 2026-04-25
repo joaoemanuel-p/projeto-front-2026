@@ -1,11 +1,13 @@
+import "./Notas.css";
 import MainLayout from "../../components/MainLayout/MainLayout";
 
-function Notas() {
+export default function Notas() {
   return (
     <MainLayout>
-      <h1>Notas</h1>
+      <section>
+        <h2>Notas</h2>
+        <p>Lista de notas do aluno</p>
+      </section>
     </MainLayout>
   );
 }
-
-export default Notas;

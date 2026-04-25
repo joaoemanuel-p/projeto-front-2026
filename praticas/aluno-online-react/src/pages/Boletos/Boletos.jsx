@@ -1,13 +1,12 @@
-import React from "react";
+import "./Boletos.css";
 import MainLayout from "../../components/MainLayout/MainLayout";
-import Cards from "../../components/Cards";
 
-export default function Dashboard() {
+export default function Boletos() {
   return (
     <MainLayout>
       <section>
-        <h2>Bem vindo ao portal do aluno</h2>
-        <Cards />
+        <h2>Boletos</h2>
+        <p>Lista de boletos do aluno</p>
       </section>
     </MainLayout>
   );
