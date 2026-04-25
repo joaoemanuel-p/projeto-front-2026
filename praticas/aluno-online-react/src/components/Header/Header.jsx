@@ -1,10 +1,13 @@
 import "./Header.css";
+import avatar from "../../assets/avatar.svg";
 
-export default function Header() {
+function Header({ titulo }) {
   return (
-    <header>
-      <h1>Olá, aluno!</h1>
-      <img src="/avatar.svg" alt="Avatar do usuário" />
+    <header className="header">
+      <h1>{titulo}</h1>
+      <img src={avatar} alt="avatar" />
     </header>
   );
 }
+
+export default Header;

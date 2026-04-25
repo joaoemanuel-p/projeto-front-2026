@@ -1,27 +1,14 @@
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-top: 20px;
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.cards article {
-  background: #e9e9e9;
-  border-radius: 10px;
-  border: 1px solid #d0d0d0;
-}
-
-.cards article h3 {
-  background: #d3d3d3;
-  padding: 10px;
-  border-radius: 10px 10px 0 0;
-}
-
-.cards ul {
-  list-style: none;
-  padding: 15px;
-}
-
-.cards li {
-  margin-bottom: 8px;
+.card{
+    background: #e9e9e9;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
 }

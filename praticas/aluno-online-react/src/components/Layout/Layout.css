@@ -1,0 +1,12 @@
+.main-content{
+    margin-left: 240px;
+    padding: 20px 40px 40px 40px; /* 👈 aumenta aqui */
+    text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+    .main-content{
+        margin-left: 0;
+    }
+}

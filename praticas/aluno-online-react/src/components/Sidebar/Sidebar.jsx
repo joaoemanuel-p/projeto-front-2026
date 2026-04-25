@@ -1,12 +1,13 @@
 import "./Sidebar.css";
+import logo from "../../assets/learn.svg";
 
-export default function Sidebar() {
+function Sidebar() {
   return (
     <nav className="menu-lateral">
-      <h2 className="logo">
-        <img src="/learn.svg" alt="Logo Aluno Online" />
-        Aluno Online
-      </h2>
+      <div className="logo">
+        <img src={logo} alt="logo" />
+        <h2>Aluno Online</h2>
+      </div>
 
       <ul>
         <li>Dashboard</li>
@@ -19,3 +20,5 @@ export default function Sidebar() {
     </nav>
   );
 }
+
+export default Sidebar;
