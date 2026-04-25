@@ -1,0 +1,28 @@
+.dashboard h2{
+    color: #444;
+    margin-top: 20px;
+}
+
+.dashboard section{
+    background:#e9e9e9;
+    border-radius:10px;
+    border:1px solid #d0d0d0;
+    margin-bottom: 20px;
+}
+
+.dashboard section h3{
+    background:#d3d3d3;
+    margin:0;
+    padding:10px;
+    border-radius:10px 10px 0 0;
+}
+
+.dashboard ul{
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+.dashboard li{
+    margin-bottom: 8px;
+}

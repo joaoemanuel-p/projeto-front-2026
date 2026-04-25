@@ -1,0 +1,27 @@
+.faltas h2{
+    color: #444;
+}
+
+.faltas section{
+    background:#e9e9e9;
+    border-radius:10px;
+    border:1px solid #d0d0d0;
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.faltas section h3{
+    background:#d3d3d3;
+    padding:10px;
+    margin:0;
+}
+
+.faltas table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.faltas th, .faltas td{
+    padding:10px;
+    border-top:1px solid #cfcfcf;
+}
