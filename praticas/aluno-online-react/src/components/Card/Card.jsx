@@ -6,8 +6,8 @@ export default function Card({ title, items }) {
       <h3>{title}</h3>
 
       <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </article>
