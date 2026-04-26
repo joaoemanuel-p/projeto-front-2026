@@ -4,7 +4,6 @@
 //import Requerimentos from "./pages/Requerimentos/Requerimentos";
 import Notas from "./pages/Notas/Notas";
 
-
 function App() {
   return <Notas />;
 }

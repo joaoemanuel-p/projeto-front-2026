@@ -6,6 +6,7 @@ function Layout({ children, titulo }) {
   return (
     <div className="layout">
       <Sidebar />
+
       <div className="main-content">
         <Header titulo={titulo} />
         {children}
