@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import "./Sidebar.css";
 import logo from "../../assets/learn.svg";
 
@@ -10,12 +12,61 @@ function Sidebar() {
       </div>
 
       <ul>
-        <li>Dashboard</li>
-        <li>Notas</li>
-        <li>Faltas</li>
-        <li>Boletos</li>
-        <li>Requerimentos</li>
-        <li>Sair</li>
+        <li>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? "active" : ""
+            }
+          >
+            Dashboard
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/notas"
+            className={({ isActive }) =>
+              isActive ? "active" : ""
+            }
+          >
+            Notas
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/faltas"
+            className={({ isActive }) =>
+              isActive ? "active" : ""
+            }
+          >
+            Faltas
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/boletos"
+            className={({ isActive }) =>
+              isActive ? "active" : ""
+            }
+          >
+            Boletos
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/requerimentos"
+            className={({ isActive }) =>
+              isActive ? "active" : ""
+            }
+          >
+            Requerimentos
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
