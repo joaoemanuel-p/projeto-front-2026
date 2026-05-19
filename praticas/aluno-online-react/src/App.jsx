@@ -11,19 +11,41 @@ import Notas from "./pages/Notas/Notas";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route
+        path="/"
+        element={<Layout titulo="Olá, Aluno!" />}
+      >
         <Route index element={<Dashboard />} />
+      </Route>
 
-        <Route path="notas" element={<Notas />} />
+      <Route
+        path="/notas"
+        element={<Layout titulo="Minhas Notas" />}
+      >
+        <Route index element={<Notas />} />
+      </Route>
 
-        <Route path="faltas" element={<Faltas />} />
+      <Route
+        path="/faltas"
+        element={<Layout titulo="Minhas Faltas" />}
+      >
+        <Route index element={<Faltas />} />
+      </Route>
 
-        <Route path="boletos" element={<Boletos />} />
+      <Route
+        path="/boletos"
+        element={<Layout titulo="Meus Boletos" />}
+      >
+        <Route index element={<Boletos />} />
+      </Route>
 
-        <Route
-          path="requerimentos"
-          element={<Requerimentos />}
-        />
+      <Route
+        path="/requerimentos"
+        element={
+          <Layout titulo="Meus Requerimentos" />
+        }
+      >
+        <Route index element={<Requerimentos />} />
       </Route>
     </Routes>
   );

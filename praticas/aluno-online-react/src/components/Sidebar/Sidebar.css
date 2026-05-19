@@ -30,6 +30,16 @@
   color: #333;
 }
 
+.menu-lateral a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-lateral a.active {
+  font-weight: bold;
+  color: #2563eb;
+}
+
 .logo {
   display: flex;
   align-items: center;
