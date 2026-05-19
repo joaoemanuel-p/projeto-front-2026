@@ -3,20 +3,16 @@ import { createContext, useState } from "react";
 export const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const [autenticado, setAutenticado] =
-    useState(false);
-
+  const [autenticado, setAutenticado] = useState(false);
   const [usuario, setUsuario] = useState(null);
 
   function login(dadosUsuario) {
     setAutenticado(true);
-
     setUsuario(dadosUsuario);
   }
 
   function logout() {
     setAutenticado(false);
-
     setUsuario(null);
   }
 
