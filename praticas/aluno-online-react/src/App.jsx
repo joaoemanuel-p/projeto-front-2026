@@ -15,6 +15,8 @@ import Requerimentos from "./pages/Requerimentos/Requerimentos";
 import Notas from "./pages/Notas/Notas";
 import Login from "./pages/Login/Login";
 
+import RequerimentoForm from "./forms/RequerimentoForm";
+
 function App() {
   const { autenticado } = useAuth();
 
@@ -33,6 +35,11 @@ function App() {
 
   return (
     <Routes>
+      <Route
+        path="/login"
+        element={<Login />}
+      />
+
       <Route
         path="/"
         element={<Layout titulo="Olá, Aluno!" />}
@@ -68,6 +75,11 @@ function App() {
         }
       >
         <Route index element={<Requerimentos />} />
+
+        <Route
+          path="novo"
+          element={<RequerimentoForm />}
+        />
       </Route>
 
       <Route

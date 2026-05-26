@@ -1,10 +1,23 @@
+import { Link } from "react-router-dom";
+
 import SectionTable from "../../components/SectionTable/SectionTable";
+
 import "./Requerimentos.css";
 
 function Requerimentos() {
   return (
     <div className="requerimentos">
-      <h2>Faça solicitações online para a secretaria</h2>
+      <div className="requerimentos-header">
+        <h2>
+          Faça solicitações online para a secretaria
+        </h2>
+
+        <Link to="/requerimentos/novo">
+          <button>
+            ➕ Novo Requerimento
+          </button>
+        </Link>
+      </div>
 
       <SectionTable
         title="Histórico"
