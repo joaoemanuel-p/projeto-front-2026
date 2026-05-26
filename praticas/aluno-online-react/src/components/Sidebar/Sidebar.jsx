@@ -1,13 +1,19 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
+
+import { useAuth } from "../../hooks/useAuth";
 
 import "./Sidebar.css";
+
 import logo from "../../assets/learn.svg";
 
 function Sidebar() {
+  const { logout } = useAuth();
+
   return (
     <nav className="menu-lateral">
       <div className="logo">
         <img src={logo} alt="logo" />
+
         <h2>Aluno Online</h2>
       </div>
 
@@ -66,6 +72,12 @@ function Sidebar() {
           >
             Requerimentos
           </NavLink>
+        </li>
+
+        <li>
+          <button onClick={logout}>
+            Sair
+          </button>
         </li>
       </ul>
     </nav>
