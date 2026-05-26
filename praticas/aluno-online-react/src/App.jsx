@@ -1,4 +1,10 @@
-import { Routes, Route } from "react-router";
+import {
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
+import { useAuth } from "./hooks/useAuth";
 
 import Layout from "./components/Layout/Layout";
 
@@ -12,6 +18,21 @@ import Login from "./pages/Login/Login";
 import RequerimentoForm from "./forms/RequerimentoForm";
 
 function App() {
+  const { autenticado } = useAuth();
+
+  if (!autenticado) {
+    return (
+      <Routes>
+        <Route path="/login" element={<Login />} />
+
+        <Route
+          path="*"
+          element={<Navigate to="/login" />}
+        />
+      </Routes>
+    );
+  }
+
   return (
     <Routes>
       <Route
@@ -60,6 +81,11 @@ function App() {
           element={<RequerimentoForm />}
         />
       </Route>
+
+      <Route
+        path="*"
+        element={<Navigate to="/" />}
+      />
     </Routes>
   );
 }
